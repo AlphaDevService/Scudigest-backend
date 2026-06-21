@@ -66,8 +66,8 @@ services:
 
   fastapi-app:
     build: ./api
-    ports:
-      - "127.0.0.1:8001:8000"
+    expose:
+      - "8000"
     environment:
       DATABASE_URL: "postgresql://directus:${DB_PASSWORD}@database:5432/directus"
       DB_PASSWORD: ${DB_PASSWORD}
