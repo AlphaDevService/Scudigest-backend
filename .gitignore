@@ -1,0 +1,23 @@
+# Segreti e env locali — NON committare
+.env
+.env.local
+.env.*.local
+
+# Dati persistenti Docker
+data/
+
+# Backup
+*.sql
+*.dump
+backups/
+
+# Python / FastAPI locale
+api/.venv/
+api/__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/
